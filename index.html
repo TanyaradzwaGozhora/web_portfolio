@@ -19,10 +19,13 @@
     <link href="css/styles.css" rel="stylesheet" />
     <script>
         var date = new Date().getFullYear();
+
         window.onload = function() {
             //when the document is finished loading, replace everything
             //between the <a ...> </a> tags with the value of splitText
-            document.getElementById("date_thing").innerHTML="Copyright © " + date + " Tanyaradzwa_Gozhora";
+            document.getElementById("date_thing").innerHTML="Copyright © " + date + " Tanyaradzwa Gozhora";
+            //write our text
+            typeWriter();
         }
     </script>
 </head>
@@ -47,13 +50,15 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center justify-content-center text-center">
             <div class="col-lg-10 align-self-end">
-                <h1 class="text-uppercase text-white font-weight-bold">Hello I'm Tanya</h1>
+<!--                <h1 class="text-uppercase text-white font-weight-bold">Hello I'm Tanya</h1>-->
+<!--                text is written in -->
+                <h1 id="demo" class="text-uppercase text-white font-weight-light"></h1>
                 <hr class="divider my-4" />
             </div>
-            <div class="col-lg-8 align-self-baseline">
-                <p class="text-white-75 font-weight-light mb-5">I'm a young, curious and eager to learn developer</p>
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More about me</a>
-            </div>
+<!--            <div class="col-lg-8 align-self-baseline">-->
+<!--&lt;!&ndash;                <p class="text-white-75 font-weight-light mb-5">I'm a young, curious and eager to learn developer</p>&ndash;&gt;-->
+<!--                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">More about me</a>-->
+<!--            </div>-->
         </div>
     </div>
 </header>
@@ -64,7 +69,7 @@
             <div class="col-lg-8 text-center">
                 <h2 class="text-white mt-0">About Me</h2>
                 <hr class="divider light my-4" />
-                <p class="text-white-50 mb-4">I'm currently a second year undergrad student at the University of Alberta. I'm majoring in computing science and expecting to graduate in 2023. I'm also aspiring to learn more about software development and like every other first year Machine Learning.</p>
+                <p class="text-white-75 mb-4">I'm currently a second year undergrad student at the University of Alberta. I'm majoring in computing science and expecting to graduate in 2023. Machine Learning is a major interest of mine, along with finance and web development too.</p>
 <!--                <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a>-->
             </div>
         </div>
@@ -118,25 +123,25 @@
             <div class="col-lg-8 text-center">
                 <h2 class="mt-0">If you want to chat</h2>
                 <hr class="divider my-4" />
-                <p class="text-muted mb-5">Send me a call or email and I'll get back to you as soon as I can!</p>
+                <p class="text-muted mb-5">You can get in touch with me on the following platforms</p>
             </div>
         </div>
         <div class="row">
+<!--            linkedin-->
             <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                <div>+1 (587) 566-9318</div>
+                <a href="https://www.linkedin.com/in/tanyaradzwa-gozhora-8941b519a/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
             </div>
+<!--            email-->
             <div class="col-lg-4 mr-auto text-center">
-                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                <a class="d-block" href="mailto:tanyaradzwagozhora@gmail.com">tanyaradzwagozhora@gmail.com</a>
+
+                <a class="d-block" href="mailto:tanyaradzwagozhora@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg></a>
             </div>
         </div>
     </div>
 </section>
 <!-- Footer-->
 <footer class="bg-light py-5">
-    <div class="container"><div id="date_thing" class="small text-center text-muted"></div></div>
+    <div class="container"><div id="date_thing" class="small text-center text-muted">Copyright</div></div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -146,5 +151,22 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <!-- Core theme JS-->
 <script src="js/scripts.js"></script>
+
+<script>
+    // Writing the text
+    var i = 0;
+    var txt = "Hello I'm Tanya"; /* The text */
+    var speed = 200; /* The speed/duration of the effect in milliseconds */
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+
+</script>
 </body>
 </html>
