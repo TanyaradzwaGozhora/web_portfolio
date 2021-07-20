@@ -6,9 +6,7 @@ import { LeftSection } from './HeroStyles';
 import Typist from 'react-typist';
 
 
-const typistStyles = {
-  display:"inline-block"
-};
+
 
 const Hero = (props) => (
   <div>
@@ -22,10 +20,9 @@ const Hero = (props) => (
           <Typist cursor={{ show: false, hideWhenDone: true, hideWhenDoneDelay: 0 }}>
 
           <SectionText >
-            Full-Stack Developer <br/>
-            and full fledged
+            Full-Stack Developer and <br/>full fledged
           <Typist.Backspace count={12} delay={200} />
-            aspiring MLE
+            aspiring ML Engineer :)
           </SectionText>
         </Typist>
         
