@@ -3,6 +3,8 @@ import React from 'react';
 import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
 import { DiCssdeck } from 'react-icons/di';
 
+import {RiNeteaseCloudMusicLine} from 'react-icons/ri';
+
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  (
@@ -10,8 +12,8 @@ const Header = () =>  (
     <Div1>
       <Link href="/">
         <a style={{display: "flex", alignItems:"center", color:"white", marginBottom:"20px"}}>
-          <DiCssdeck size="3rem"/>
-          <Span>Portfolio</Span>
+          <RiNeteaseCloudMusicLine size="3rem"/>
+          <Span>Tanya</Span>
         </a>
       </Link>
     </Div1>
@@ -45,7 +47,7 @@ const Header = () =>  (
         <AiFillLinkedin size="3rem"/>
       </SocialIcons>
 
-      <SocialIcons href="https://twitter.com">
+      <SocialIcons href="https://twitter.com/MeTaGeGo">
         <AiFillTwitterCircle size="3rem"/>
       </SocialIcons>
     </Div3>
