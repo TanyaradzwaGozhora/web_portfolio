@@ -14,7 +14,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>A commit a day keeps boredom away</Slogan>
+          <Slogan>A commit a day keeps the boredom away</Slogan>
         </CompanyContainer>
         <SocialContainer>
         <SocialIcons href="https://github.com/TanyaradzwaGozhora">
