@@ -20,8 +20,8 @@ const Hero = (props) => (
           <Typist cursor={{ show: false, hideWhenDone: true, hideWhenDoneDelay: 0 }}>
 
           <SectionText >
-            Full-Stack Developer and <br/>full fledged
-          <Typist.Backspace count={12} delay={200} />
+            Full-Stack Developer and<br/> ML Engineer
+          <Typist.Backspace count={11} delay={200} />
             aspiring ML Engineer :)
           </SectionText>
         </Typist>

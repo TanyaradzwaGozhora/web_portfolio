@@ -49,22 +49,19 @@ const Timeline = () => {
         I'm a third year Honours Computer Science Student BSc at the University of Alberta <br/>
         My interests are ..., milestones etc
       </SectionText>
-      <CarouselContainer ref={carouselRef} onscroll={handleScroll}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
-        {TimeLineData.map((item, index) => (
-          <CarouselMobileScrollNode key={index} final={index===TOTAL_CAROUSEL_COUNT -1}>
-            <CarouselItem
-            index={index}
-            id={`carousel__item-${index}`}
-            active={activeItem}
-            onClick={(e)=> handleClick(e,index)}
-            >
-                <CarouselItemTitle>
-                  {item.year}
-
-                  {/* SVG line starts */}
-
-                  <CarouselItemImg
+          {TimeLineData.map((item, index) => (
+            <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
+              <CarouselItem
+                index={index}
+                id={`carousel__item-${index}`}
+                active={activeItem}
+                onClick={(e) => handleClick(e, index)}
+              >
+              <CarouselItemTitle>
+                {item.year}
+                <CarouselItemImg
                     width="208"
                     height="6"
                     viewBox="0 0 208 6"
@@ -94,31 +91,27 @@ const Timeline = () => {
                       </linearGradient>
                     </defs>
                   </CarouselItemImg>
-
-                  {/* SVG line ends */}
-                </CarouselItemTitle>
-                <CarouselItemText>
-                  {item.text}
-                </CarouselItemText>
-            </CarouselItem>
-          </CarouselMobileScrollNode>
-        ))}
+              </CarouselItemTitle>
+              <CarouselItemText>{item.text}</CarouselItemText>
+              </CarouselItem>
+            </CarouselMobileScrollNode>
+          ))}
         </>
       </CarouselContainer>
       <CarouselButtons>
-        {TimeLineData.map((item, index) =>(
-          <CarouselButton
+        {TimeLineData.map((item, index) => (
+          <CarouselButton 
             key={index}
             index={index}
             active={activeItem}
             onClick={(e) => handleClick(e, index)}
             type="button"
           >
-            <CarouselButtonDot active={activeItem}/>
+            <CarouselButtonDot active={activeItem} />
           </CarouselButton>
         ))}
       </CarouselButtons>
-      <SectionDivider/>
+      <SectionDivider />
     </Section>
   );
 };
