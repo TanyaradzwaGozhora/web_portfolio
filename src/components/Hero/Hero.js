@@ -4,6 +4,7 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 import Typist from 'react-typist';
+import {AiOutlineDownload} from 'react-icons/ai'
 
 
 
@@ -26,7 +27,10 @@ const Hero = (props) => (
           </SectionText>
         </Typist>
         
-        <Button onClick={()=>window.location="#about"}>Learn More</Button>
+        <Button onClick={()=>(window.location.href="documents/Tanya.pdf")} target="_blank">
+          Download Resume
+          <AiOutlineDownload/>
+        </Button>
       </LeftSection>
     </Section>
   </div>

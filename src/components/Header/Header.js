@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
 
 import {RiNeteaseCloudMusicLine} from 'react-icons/ri';
 
