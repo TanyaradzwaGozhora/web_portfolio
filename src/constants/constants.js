@@ -3,7 +3,7 @@ export const projects = [
     title: 'Unify',
     description: "This project was submitted for HackED 2021, with Akrash Sharma, Abeer Waheed, and David Parise. Due to the pandemic, we created a site that allows students to submit their discord handles and courses so that they can connect with students with similar courses as normal and so keeping the classroom socialization aspect that many students missed about in-person learning ongoing. I was involved across the stack",
       image: '/images/unify.png',
-      tags: ['MongoDB', 'Express', 'HTML', "CSS", "JQuery", 'Nodejs'],
+      tags: ['MongoDB', 'Express', 'Nodejs'],
     source: 'https://github.com/TanyaradzwaGozhora/unify',
     visit: 'https://github.com/TanyaradzwaGozhora/unify',
     id: 0,
