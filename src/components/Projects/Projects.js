@@ -6,7 +6,7 @@ import { projects } from '../../constants/constants';
 import Header from '../Header/Header';
 const Unify = [{
   title: 'Unify',
-  description: "This project was submitted for HackED 2021, with Akrash Sharma, Abeer Waheed, and David Parise. Due to the pandemic, we created a site that allows students to submit their discord handles and courses so that they can connect with students with similar courses as normal and so keeping the classroom socialization aspect that many students missed about in-person learning ongoing. I was involved across the stack",
+  description: "This project was submitted for HackED 2021, with Akrash Sharma, Abeer Waheed, and David Parise. Due to the pandemic, we created a site that allows students to submit their discord handles and courses so that they can connect with students with similar courses as normal and so keeping the classroom socialization aspect that many students missed about in-person learning ongoing.",
     image: '/images/unify.png',
     tags: ['MongoDB', 'Express', 'Nodejs'],
   source: 'https://github.com/TanyaradzwaGozhora/unify',
