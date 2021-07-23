@@ -6,8 +6,18 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
+import {useEffect} from "react";
 
-const Home = () => {
+
+function Home (){
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
+  
+
   return (
     <Layout>
       <Section grid>
