@@ -8,33 +8,25 @@ export const projects = [
     visit: 'https://github.com/TanyaradzwaGozhora/unify',
     id: 0,
   },
-  {
-    title: 'stats265',
-    description:"While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: '/images/2.png',
-    tags: ['Python', 'Unittest'],
+    {
+      title: 'stats265',
+    description:"This package was inspired by Stats 265. As we went through the course we learned lots of distributions. I then decided to make a package capable of playing around with all the distributions, (visualisations showing models, how accurately those model estimates given data and calculating statistics of data e.g mean, standard deviation, etc). Currently, it offers 28% of the distributions we learnt.",
+  image:'/images/265.png',
+    tags: ['Python','MatPlotlib', 'Unittest'],
     source: 'https://github.com/TanyaradzwaGozhora/stats265',
     visit: 'https://pypi.org/project/stats265/',
-    id: 1,
-  },
-  {
-    title: 'Udacity Project 1',
-    description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-      image: '/images/3.jpg',
-      tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 2,
-  },
-  {
-    title: 'Stem Big data challenge',
-    description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
-    id: 3,
-  },
+    id: 1},
+  
+    {
+  
+      title: 'Stem Big data challenge',
+      description: "Inspired by the Covid-19 pandemic, which was at the time yet to really unfold in Africa. Akrash Sharma,Xhiang Zhang, and I decided to investigate the correlation between flights and covid cases in these African countries. We figured that there should be a decent correlation by observing that the two most plagued countries at the time were SA and Egypt(the two most busy countries airwise). We were pleased with the results as the linear regressions yielded some strong correlations (R-squared 95%+)",
+      image: '/images/4.jpg',
+      tags: ['R','Latex', 'Pandas', 'Python'],
+      source: 'https://google.com',
+      visit: 'https://google.com',
+      id: 3,
+    }
 ];
 
 export const TimeLineData = [
