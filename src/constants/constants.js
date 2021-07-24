@@ -30,7 +30,7 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2019, text: 'First WebSite and Freshman year UAlberta', },
-  { year: 2020, text: 'First Research Paper and Hackthon', },
-  { year: 2021, text: 'First Internship and Package', },
+  { year: 2019, text: 'First Website and First year at UAlberta', },
+  { year: 2020, text: 'First Research Paper and First Hackthon', },
+  { year: 2021, text: 'First Internship and First Package', },
 ];
