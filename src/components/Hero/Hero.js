@@ -27,7 +27,7 @@ const Hero = (props) => (
           </SectionText>
         </Typist>
         
-        <Button onClick={()=>(window.location.href="documents/Tanya.pdf")} target="_blank">
+        <Button onClick={()=>(window.location.href="documents/Tanya.pdf")}>
           Download Resume
           <AiOutlineDownload/>
         </Button>

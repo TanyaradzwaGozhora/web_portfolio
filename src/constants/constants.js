@@ -20,9 +20,9 @@ export const projects = [
     {
   
       title: 'Stem Big data challenge',
-      description: "Inspired by the Covid-19 pandemic, which was at the time yet to really unfold in Africa. Akrash Sharma,Xhiang Zhang, and I decided to investigate the correlation between flights and covid cases in these African countries. We figured that there should be a decent correlation by observing that the two most plagued countries at the time were SA and Egypt(the two most busy countries airwise). We were pleased with the results as the linear regressions yielded some strong correlations (R-squared 95%+)",
-      image: '/images/4.jpg',
-      tags: ['R','Latex', 'Pandas', 'Python'],
+      description: "Inspired by the Covid-19 pandemic, which was at the time yet to really unfold in Africa. Akrash Sharma, Xhiang Zhang, and I decided to investigate the correlation between flights and covid cases in these African countries. We figured that there should be a decent correlation by observing that the two most affected countries at the time were South Africa and Egypt, the major air traffic centers on the continent. We were pleased with the results as the linear regressions yielded some strong correlations with an R-squared 95%+",
+      image: '/images/stem.jpg',
+      tags: ['Data-Scraping','Latex', 'Pandas', 'Python'],
       source: 'https://google.com',
       visit: 'https://google.com',
       id: 3,
