@@ -1,6 +1,6 @@
 import React ,{useEffect, useState} from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
+import { TitleDate, BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
@@ -71,12 +71,16 @@ const Projects =() =>  {
           data-aos-duration="1500"
           >
     <GridContainer>
-      {Unify.map(({id, image, title, description, tags, source, visit}) =>(
+      {Unify.map(({id, image, title, description, tags, source, visit, date}) =>(
         <BlogCard key={id}>
           <Img src={image}/>
           <TitleContent>
             <HeaderThree title>
               {title}
+              <TitleDate>
+                <br/>
+                {date}
+              </TitleDate>
               <Hr/>
             </HeaderThree>
           </TitleContent>
@@ -84,7 +88,7 @@ const Projects =() =>  {
             {description}
           </CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+            <br/>
             <TagList>
               {tags.map((tag, i)=>(
                 <Tag key={i}>{tag}</Tag>
@@ -105,12 +109,17 @@ const Projects =() =>  {
           data-aos-duration="1500"
           >
     <GridContainer>
-      {Stats265.map(({id, image, title, description, tags, source, visit}) =>(
+      {Stats265.map(({id, image, title, description, tags, source, visit, date}) =>(
         <BlogCard key={id}>
           <Img src={image}/>
           <TitleContent>
             <HeaderThree title>
               {title}
+              <br/>
+              <TitleDate>
+                <br/>
+                {date}
+              </TitleDate>
               <Hr/>
             </HeaderThree>
           </TitleContent>
@@ -118,7 +127,7 @@ const Projects =() =>  {
             {description}
           </CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+            <br/>
             <TagList>
               {tags.map((tag, i)=>(
                 <Tag key={i}>{tag}</Tag>
@@ -138,12 +147,16 @@ const Projects =() =>  {
           data-aos-duration="1500"
           >
     <GridContainer>
-      {StemData.map(({id, image, title, description, tags, source, visit}) =>(
+      {StemData.map(({id, image, title, description, tags,  date}) =>(
         <BlogCard key={id}>
           <Img src={image}/>
           <TitleContent>
             <HeaderThree title>
               {title}
+              <TitleDate>
+                <br/>
+                {date}
+              </TitleDate>
               <Hr/>
             </HeaderThree>
           </TitleContent>
@@ -151,7 +164,7 @@ const Projects =() =>  {
             {description}
           </CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+            <br/>
             <TagList>
               {tags.map((tag, i)=>(
                 <Tag key={i}>{tag}</Tag>
@@ -172,12 +185,16 @@ const Projects =() =>  {
     else{
       return (
   <GridContainer>
-    {projects.map(({id, image, title, description, tags, source, visit}) =>(
+    {projects.map(({id, image, title, description, tags, source, visit,date}) =>(
         <BlogCard key={id}>
           <Img src={image}/>
           <TitleContent>
             <HeaderThree title>
               {title}
+              <TitleDate>
+                <br/>
+                {date}
+              </TitleDate>
               <Hr/>
             </HeaderThree>
           </TitleContent>
@@ -185,7 +202,7 @@ const Projects =() =>  {
             {description}
           </CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+            <br/>
             <TagList>
               {tags.map((tag, i)=>(
                 <Tag key={i}>{tag}</Tag>

@@ -38,6 +38,14 @@ export const TitleContent = styled.div`
 
 `;
 
+export const TitleDate = styled.div`
+text-align: center;
+z-index: 20;
+width: 100%;
+// maybe change font color to give it that em look
+font-size: 15px;
+`;
+
 
 export const HeaderThree = styled.h3`
   font-weight: 500;

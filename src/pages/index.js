@@ -9,6 +9,7 @@ import { Section } from '../styles/GlobalComponents';
 import 'aos/dist/aos.css';
 import Aos from 'aos';
 import {useEffect} from "react";
+import { Head } from 'next/document';
 
 
 function Home (){
