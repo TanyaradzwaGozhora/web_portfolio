@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
+import {CountUp} from 'use-count-up';
 
 const data = [
   { number: 23, text: 'Open Source Projects'},
@@ -16,7 +16,8 @@ const Acomplishments = () => (
     <Boxes>
       {data.map((card, index)=>(
         <Box key={index}>
-          <BoxNum>{card.number}</BoxNum>
+          <BoxNum>
+          <CountUp isCounting end={card.number} duration={4.5} /></BoxNum>
           <BoxText>{card.text}</BoxText>
         </Box>
       ))}

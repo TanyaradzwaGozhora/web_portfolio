@@ -37,3 +37,4 @@ export const TimeLineData = [
   { year: 2020, text: 'First Research Paper and First Hackthon', },
   { year: 2021, text: 'First Internship and First Package', },
 ];
+
