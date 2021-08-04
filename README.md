@@ -1,7 +1,9 @@
 
 ## Personal Portfolio
+![react](https://user-images.githubusercontent.com/51749063/128173621-b41f73d1-cf9b-4213-8152-e668a9e1ed53.png)
 
-This is my Portfolio site made with Next.js & React![react](https://user-images.githubusercontent.com/51749063/128173384-4bf01cb3-57eb-495f-a760-d03d74c26a45.png)
+
+This is my Portfolio site made with Next.js & React
 
 Hosted by netlify
 
