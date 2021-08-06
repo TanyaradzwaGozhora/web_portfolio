@@ -5,7 +5,7 @@
 
 This is my Portfolio site made with Next.js & React
 
-Hosted by netlify
+Hosted by netlify at https://tanyaradzwagozhora.com/
 
 
 
