@@ -3,7 +3,7 @@ import React ,{useEffect, useState} from 'react';
 import { TitleDate, BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
-
+import {papers} from '../../constants/constants';
 
 
 
@@ -44,7 +44,7 @@ function useWindowSize() {
 // Our project constants
 const Unify = [projects[0]];
 const Stats265 =[projects[1]];
-const StemData =[projects[2]];
+const StemData =[papers[0]];
 
 
 const Projects =() =>  {
@@ -172,7 +172,7 @@ const Projects =() =>  {
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks onClick={()=>(window.location.href="documents/Tanya.pdf")}>Download </ExternalLinks>
+            <ExternalLinks onClick={()=>(window.location.href="documents/UNBDC_Project.pdf")}>Download </ExternalLinks>
           </UtilityList>
         </BlogCard>
       ))}
@@ -184,6 +184,7 @@ const Projects =() =>  {
 
     else{
       return (
+        <Section>
   <GridContainer>
     {projects.map(({id, image, title, description, tags, source, visit,date}) =>(
         <BlogCard key={id}>
@@ -215,6 +216,39 @@ const Projects =() =>  {
           </UtilityList>
         </BlogCard>))}
     </GridContainer>
+    <GridContainer>
+
+    {papers.map(({id, image, title, description, tags, source, visit,date}) =>(
+        <BlogCard key={id}>
+          <Img src={image}/>
+          <TitleContent>
+            <HeaderThree title>
+              {title}
+              <TitleDate>
+                <br/>
+                {date}
+              </TitleDate>
+              <Hr/>
+            </HeaderThree>
+          </TitleContent>
+          <CardInfo>
+            {description}
+          </CardInfo>
+          <div>
+            <br/>
+            <TagList>
+              {tags.map((tag, i)=>(
+                <Tag key={i}>{tag}</Tag>
+              ))}
+            </TagList>
+          </div>
+          <UtilityList>
+            <ExternalLinks onClick={()=>(window.location.href="documents/UNBDC_Project.pdf")}>Download</ExternalLinks>
+          </UtilityList>
+        </BlogCard>))}
+
+    </GridContainer>
+    </Section>
       )
     }
     
