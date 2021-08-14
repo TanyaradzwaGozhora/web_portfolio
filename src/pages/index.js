@@ -16,6 +16,7 @@ function Home (){
 
   useEffect(() => {
     Aos.init();
+    document.title = "Tanya"
   }, []);
   
 
