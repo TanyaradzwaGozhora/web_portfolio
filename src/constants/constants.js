@@ -18,7 +18,16 @@ export const projects = [
     source: 'https://github.com/TanyaradzwaGozhora/stats265',
     visit: 'https://pypi.org/project/stats265/',
     id: 1},
-  
+   
+    {
+      title: "Movie sentiment analysis app",
+    description: "This application was made so as to learn how to use AWS SageMaker, in particular using it with PyTorch. Our model was a very simple one, which consists of a single layer RNN, thus giving us a lot of room for improvement if needed. Deployment was fully handled by AWS services such as Lambda, API gateway, and Sagemaker. Modelling and testing were done on AWS hosted notebooks. The dataset used was the AWS Dataset. I don’t have a live site for this App as it was a bit too pricey to keep the API endpoint open for long.",
+      image:"/images/sentiment_analysis.jpg",
+      tags:['Python', 'AWS Sagemaker', 'Pytorch'],
+      source:"https://github.com/TanyaradzwaGozhora/Review-Sentiment-Analysis-App",
+      id:2
+
+    }
 ];
 
 export const papers = [{
@@ -28,7 +37,7 @@ export const papers = [{
   description: "Inspired by the Covid-19 pandemic, which was at the time yet to really unfold in Africa. Akrash Sharma, Xhiang Zhang, and I decided to investigate the correlation between flights and covid cases in these African countries. We figured that there should be a decent correlation by observing that the two most affected countries at the time were South Africa and Egypt, the major air traffic centers on the continent. We were pleased with the results as the linear regressions yielded some strong correlations with an R-squared 95%+",
   image: '/images/stem.jpg',
   tags: ['Data-Scraping','Latex', 'Pandas', 'Python'],
-  source: 'https://google.com',
+  source: '',
   visit: 'https://google.com',
   id: 3,
 }

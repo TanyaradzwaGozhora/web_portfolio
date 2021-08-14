@@ -41,10 +41,11 @@ function useWindowSize() {
 }
 
 
-// Our project constants
+// Our project constants for our large screen formatting at some point code a parity function to calculate fade direction
 const Unify = [projects[0]];
 const Stats265 =[projects[1]];
 const StemData =[papers[0]];
+const MovieAnalysis =[projects[2]];
 
 
 const Projects =() =>  {
@@ -142,7 +143,7 @@ const Projects =() =>  {
       ))}
     </GridContainer>
     </div>
-    <div data-aos="fade-up"
+    <div data-aos="fade-right"
           data-aos-easing="linear"
           data-aos-duration="1500"
           >
@@ -173,6 +174,43 @@ const Projects =() =>  {
           </div>
           <UtilityList>
             <ExternalLinks onClick={()=>(window.location.href="documents/UNBDC_Project.pdf")}>Download </ExternalLinks>
+          </UtilityList>
+        </BlogCard>
+      ))}
+    </GridContainer>
+    </div>
+    <div data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          >
+    <GridContainer>
+      {MovieAnalysis.map(({id, image, title, description, tags, source, visit, date}) =>(
+        <BlogCard key={id}>
+          <Img src={image}/>
+          <TitleContent>
+            <HeaderThree title>
+              {title}
+              <br/>
+              <TitleDate>
+                <br/>
+                {date}
+              </TitleDate>
+              <Hr/>
+            </HeaderThree>
+          </TitleContent>
+          <CardInfo>
+            {description}
+          </CardInfo>
+          <div>
+            <br/>
+            <TagList>
+              {tags.map((tag, i)=>(
+                <Tag key={i}>{tag}</Tag>
+              ))}
+            </TagList>
+          </div>
+          <UtilityList>
+            <ExternalLinks href={source}>Code </ExternalLinks>
           </UtilityList>
         </BlogCard>
       ))}
@@ -211,8 +249,14 @@ const Projects =() =>  {
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={visit}>Deployment </ExternalLinks>
-            <ExternalLinks href={source}>Code </ExternalLinks>
+            {/* If we have a link to a live sit then add it else don't */}
+                {visit?
+                <>
+                <ExternalLinks href={visit}>Deployment </ExternalLinks>
+                <ExternalLinks href={source}>Code </ExternalLinks>
+                </>
+                :<ExternalLinks href={source}>Code </ExternalLinks> }
+            
           </UtilityList>
         </BlogCard>))}
     </GridContainer>
