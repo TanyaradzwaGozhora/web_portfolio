@@ -7,6 +7,7 @@ import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTi
 const Footer = () => {
   return (
     <FooterWrapper>
+      
       <LinkList>
         <LinkColumn>
           <LinkTitle >
@@ -19,7 +20,9 @@ const Footer = () => {
       <SocialIconsContainer>
         <CompanyContainer>
           <Slogan>A commit a day keeps the boredom away <br></br>
-          Strongly inspired by <a class="reference" href="https://github.com/adrianhajdin/portfolio_website"> this repo</a>
+          
+          Strongly inspired by <a  href="https://github.com/adrianhajdin/portfolio_website"> 
+          this repo</a>
           </Slogan>
         </CompanyContainer>
         <SocialContainer>
@@ -36,6 +39,12 @@ const Footer = () => {
       </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>
+      <style jsx>{`
+        a {
+          color: aliceblue;
+        }
+      `}
+      </style>
     </FooterWrapper>
   );
 };
