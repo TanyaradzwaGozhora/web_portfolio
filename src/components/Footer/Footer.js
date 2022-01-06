@@ -9,12 +9,18 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle href="mailto:tanyaradzwagozhora@gmail.com">tanyaradzwagozhora@gmail.com</LinkTitle>
+          <LinkTitle >
+          <LinkItem href="mailto:tanyaradzwagozhora@gmail.com">tanyaradzwagozhora@gmail.com </LinkItem>
+          
+          </LinkTitle>
+          <p></p>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>A commit a day keeps the boredom away</Slogan>
+          <Slogan>A commit a day keeps the boredom away <br></br>
+          Strongly inspired by <a class="reference" href="https://github.com/adrianhajdin/portfolio_website"> this repo</a>
+          </Slogan>
         </CompanyContainer>
         <SocialContainer>
         <SocialIcons href="https://github.com/TanyaradzwaGozhora">

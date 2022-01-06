@@ -5,6 +5,8 @@
 
 This is my (nearly finished) Portfolio site made with Next.js (& React)
 
+Strongly inspired by this tutorial (https://github.com/adrianhajdin/portfolio_website)
+
 Hosted by netlify at https://tanyaradzwagozhora.com/
 
 
