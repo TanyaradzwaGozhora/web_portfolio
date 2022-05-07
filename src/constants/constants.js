@@ -27,7 +27,16 @@ export const projects = [
       source:"https://github.com/TanyaradzwaGozhora/Review-Sentiment-Analysis-App",
       id:2
 
-    }
+    }, 
+    // Sketch of the project{
+    //   title: "FillActive Community App",
+    //   description: "This is a cool app",
+    //   image:"/images/fillactive.png",
+    //   tags:["Express", "Nodejs", "MongoDB"],
+    //   source:"",
+    //   id:3
+    // },
+    
 ];
 
 export const papers = [{
@@ -40,7 +49,8 @@ export const papers = [{
   source: '',
   visit: 'https://google.com',
   id: 3,
-}
+},
+// Need to add the 469 Paper
 ];
 
 export const TimeLineData = [
