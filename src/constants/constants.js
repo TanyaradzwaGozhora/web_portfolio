@@ -28,14 +28,14 @@ export const projects = [
       id:2
 
     }, 
-    // Sketch of the project{
-    //   title: "FillActive Community App",
-    //   description: "This is a cool app",
-    //   image:"/images/fillactive.png",
-    //   tags:["Express", "Nodejs", "MongoDB"],
-    //   source:"",
-    //   id:3
-    // },
+    {
+      title: "FillActive Community App",
+      description: "At the start of the Fall 2021 semester, I participated in a hackathon in which we developed a web App for FillActive. The app uses incentives and gamification to promote exercise for self-worth and to build a community among students, and teachers. We won the hackathon and received 3500CAD in Amazon Gift Cards. It was a great learning experience!",
+      image:"/images/fillactive.png",
+      tags:["Express", "Nodejs", "SQL"],
+      source:"https://www.businesswire.com/news/home/20210922005727/en/Morgan-Stanley-Code-to-Give-Hackathon-Provides-Montreal-Nonprofits-DESTA-Fillactive-and-La-Tabl%C3%A9e-des-Chefs-with-Technology-Solutions-to-Drive-their-Essential-Community-Work",
+      id:3
+    },
     
 ];
 

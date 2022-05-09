@@ -249,13 +249,17 @@ const Projects =() =>  {
             </TagList>
           </div>
           <UtilityList>
-            {/* If we have a link to a live sit then add it else don't */}
+            {/* If we have a link to a live sit then add it else don't */} 
                 {visit?
                 <>
                 <ExternalLinks href={visit}>Deployment </ExternalLinks>
                 <ExternalLinks href={source}>Code </ExternalLinks>
                 </>
-                :<ExternalLinks href={source}>Code </ExternalLinks> }
+                :<ExternalLinks href={source}>
+                  {/* If it's fillactive */}
+                  {id===3?<>Article</>:<>Code</>} 
+                </ExternalLinks> }
+              
             
           </UtilityList>
         </BlogCard>))}
