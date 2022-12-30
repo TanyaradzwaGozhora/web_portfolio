@@ -20,7 +20,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with <br/>
-            React.js, Next.js, Figma
+            React.js, Vue2&3.js, Next.js, Figma
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,7 +31,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br/>
-            Node.js, MongoDB, mySQL, Unittest
+            Node.js, MongoDB, mySQL, Unittest, Django
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -42,7 +42,7 @@ const Technologies = () =>  (
           <ListTitle>Machine Learning</ListTitle>
           <ListParagraph>
             Experience with <br/>
-            Pandas, Pytorch, AWS Sagemaker
+            Pytorch, AWS Sagemaker, Python data libraries (eg pandas)
           </ListParagraph>
         </ListContainer>
       </ListItem>

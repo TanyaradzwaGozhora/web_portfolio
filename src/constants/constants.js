@@ -55,7 +55,8 @@ export const papers = [{
 
 export const TimeLineData = [
   { year: 2019, text: 'First Website and First year at UAlberta', },
-  { year: 2020, text: 'First Research Paper and First Hackthon', },
+  { year: 2020, text: 'First Paper and First Hackathon', },
   { year: 2021, text: 'First Internship and First Package', },
+  { year: 2022, text: 'First Crocheted Scarf :)',},
 ];
 
