@@ -35,9 +35,10 @@ const Footer = () => {
         <AiFillLinkedin size="3rem"/>
       </SocialIcons>
 
-      <SocialIcons href="https://twitter.com/MeTaGeGo">
+{/* Not on twitter anymore :( */}
+      {/* <SocialIcons href="https://twitter.com/MeTaGeGo">
         <AiFillTwitterCircle size="3rem"/>
-      </SocialIcons>
+      </SocialIcons> */}
         </SocialContainer>
       </SocialIconsContainer>
       <style jsx>{`

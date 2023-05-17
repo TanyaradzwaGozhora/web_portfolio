@@ -29,6 +29,16 @@ export const projects = [
 
     }, 
     {
+      title: 'stats265',
+      description:"This package was inspired by Stats 265. As we went through the course we learned lots of distributions. I then decided to make a package capable of playing around with all the distributions, (visualisations showing models, how accurately those model estimates given data and calculating statistics of data e.g mean, standard deviation, etc). Currently, it offers 28% of the distributions we learnt.",
+    image:'/images/265.png',
+    date:"2021-12",
+      tags: ['Python','sklearn', 'Unittest'],
+      source: 'https://github.com/J-A-T-T/LVO-EEG',
+      visit: 'public/documents/LVO_project.pdf',
+      id: 4
+     },
+    {
       title: "FillActive Community App",
       description: "At the start of the Fall 2021 semester, I participated in a hackathon in which we developed a web App for FillActive. The app uses incentives and gamification to promote exercise for self-worth and to build a community among students, and teachers. We won the hackathon and received 3500CAD in Amazon Gift Cards. It was a great learning experience!",
       image:"/images/fillactive.png",
@@ -47,7 +57,7 @@ export const papers = [{
   image: '/images/stem.jpg',
   tags: ['Data-Scraping','Latex', 'Pandas', 'Python'],
   source: '',
-  visit: 'https://google.com',
+  visit: '/public/documents/UnBDC_Project.pdf',
   id: 3,
 },
 // Need to add the 469 Paper
