@@ -19,8 +19,11 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>An <em>attempted</em> commit a day keeps the boredom away :)<br></br>
+          <Slogan>Small wins ~ Julius Nanai<br></br>
+          {/* <Slogan>An <em>attempted</em> commit a day keeps the boredom away :)<br></br> */}
+
           <br></br>
+          
           
           Strongly inspired by <a  href="https://github.com/adrianhajdin/portfolio_website"> 
           this repo</a>
